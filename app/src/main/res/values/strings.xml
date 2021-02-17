@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">dicedemo</string>
+    <string name="DecriptionLogo">los vegas logo</string>
+    <string name="dice">Dice</string>
+    <string name="btn">ROLE</string>
+    <string name="text">ROLL DICE!</string>
+    <string name="higher">Higher</string>
+    <string name="Lower">Lower</string>
+</resources>
