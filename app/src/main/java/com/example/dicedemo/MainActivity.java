@@ -40,12 +40,11 @@ public class MainActivity extends AppCompatActivity {
         // image view inside your app!
         // Click listener look for an event on your view components.
 
-        // begin text for the result text view
-        mTextView = (TextView)this.findViewById(R.id.mytext);
-        mTextView.setText("Begin!");
+        // getting text view to set the result value
+        mTextView = this.findViewById(R.id.mytext);
 
         // logic if user clicks higher button
-        btnHigh = (Button)findViewById(R.id.higher);
+        btnHigh = findViewById(R.id.higher);
         btnHigh.setOnClickListener(new Button.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -58,18 +57,18 @@ public class MainActivity extends AppCompatActivity {
                 rightDie.setImageResource(diceArray[randRightDie]);
 
                 if(randLeftDie < randRightDie){
-                       mTextView.setText("User Win!");
+                       mTextView.setText("USER WIN!");
                    }else if(randLeftDie > randRightDie){
-                       mTextView.setText("Computer Win!");
+                       mTextView.setText("COMPUTER WIN!");
                    }
                    else{
-                       mTextView.setText("Tie!");
+                       mTextView.setText("IT'S A TIE");
                    }
             }
         });
 
         // logic if user clicks lower button
-        btnLow = (Button)findViewById(R.id.lower);
+        btnLow = findViewById(R.id.lower);
         btnLow.setOnClickListener(new Button.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -82,12 +81,12 @@ public class MainActivity extends AppCompatActivity {
                 rightDie.setImageResource(diceArray[randRightDie]);
 
                 if(randLeftDie > randRightDie){
-                    mTextView.setText("User Win!");
+                    mTextView.setText("USER WIN!");
                 }else if(randLeftDie < randRightDie){
-                    mTextView.setText("Computer Win!");
+                    mTextView.setText("COMPUTER WIN!");
                 }
                 else{
-                    mTextView.setText("Tie!");
+                    mTextView.setText("IT'S A TIE");
                 }
             }
         });
