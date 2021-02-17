@@ -1,15 +1,13 @@
 package com.example.dicedemo;
 
-import androidx.appcompat.app.AppCompatActivity;
-
+import android.annotation.SuppressLint;
 import android.os.Bundle;
-import android.view.Gravity;
 import android.view.View;
-import android.widget.ImageView;
 import android.widget.Button;
-import android.util.Log;
-import android.widget.LinearLayout;
+import android.widget.ImageView;
 import android.widget.TextView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.Random;
 
@@ -21,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
     Button btnHigh;
     Button btnLow;
 
+    @SuppressLint("SetTextI18n")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
