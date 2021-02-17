@@ -20,7 +20,6 @@ public class MainActivity extends AppCompatActivity {
     TextView mTextView;
     Button btnHigh;
     Button btnLow;
-    String btntext;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
         mTextView = (TextView)this.findViewById(R.id.mytext);
         mTextView.setText("Begin!");
 
-        // getting higher button value and adding value to common variable btntext on click
+        // logic if user clicks higher button
         btnHigh = (Button)findViewById(R.id.higher);
         btnHigh.setOnClickListener(new Button.OnClickListener() {
             @Override
@@ -70,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        // getting lower button value and adding value to common variable btntext on click
+        // logic if user clicks lower button
         btnLow = (Button)findViewById(R.id.lower);
         btnLow.setOnClickListener(new Button.OnClickListener() {
             @Override
